@@ -43,3 +43,39 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components
 - [React Hook Form](https://react-hook-form.com/) - Form handling
 - [Zod](https://zod.dev/) - Schema validation
+
+## Deployment
+
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment process is triggered whenever changes are pushed to the `main` branch.
+
+### Prerequisites for Deployment
+
+1. Enable GitHub Pages in your repository:
+   - Go to repository Settings > Pages
+   - Set "Source" to "GitHub Actions"
+
+### How Deployment Works
+
+1. Push your changes to the `main` branch
+2. GitHub Actions will automatically:
+   - Install dependencies
+   - Build the project
+   - Deploy to GitHub Pages
+
+The deployment workflow:
+- Builds an optimized production version
+- Uploads the build artifacts
+- Deploys to GitHub Pages
+- Makes the site available at your GitHub Pages URL
+
+You can monitor the deployment status in the "Actions" tab of your GitHub repository.
+
+### Manual Deployment
+
+While deployment is automated, you can still build the project locally:
+
+```bash
+npm run build
+```
+
+This will create an optimized production build in the `out` directory.
