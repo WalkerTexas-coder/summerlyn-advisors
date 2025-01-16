@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Monitor, Shield, Phone, CreditCard, Workflow, Bot } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 import {
   NavigationMenu,
@@ -11,6 +12,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
 const services = [
@@ -56,9 +58,9 @@ export function SiteHeader() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="bg-blue-600 py-2">
-        <div className="container flex items-center justify-center text-sm text-white">
+        <div className="container flex items-center justify-center text-sm font-medium text-white">
           <p>
             Transform your business with enterprise technology.{" "}
             <Link href="/contact" className="underline hover:text-blue-100">
@@ -81,10 +83,10 @@ export function SiteHeader() {
                     <Link
                       key={service.title}
                       href={service.href}
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-100 focus:bg-gray-100"
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-50 focus:bg-gray-50"
                     >
                       <div className="flex items-center space-x-2">
-                        <service.icon className="h-4 w-4" />
+                        <service.icon className="h-4 w-4 text-blue-600" />
                         <div className="text-sm font-medium leading-none">
                           {service.title}
                         </div>
@@ -100,11 +102,10 @@ export function SiteHeader() {
             <NavigationMenuItem>
               <Link href="/blog" legacyBehavior passHref>
                 <NavigationMenuLink
-                  className={
-                    pathname === "/blog"
-                      ? "text-blue-600"
-                      : "text-gray-600 hover:text-gray-900"
-                  }
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    pathname === "/blog" ? "text-blue-600" : ""
+                  )}
                 >
                   Blog
                 </NavigationMenuLink>
@@ -113,11 +114,10 @@ export function SiteHeader() {
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink
-                  className={
-                    pathname === "/contact"
-                      ? "text-blue-600"
-                      : "text-gray-600 hover:text-gray-900"
-                  }
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    pathname === "/contact" ? "text-blue-600" : ""
+                  )}
                 >
                   Contact
                 </NavigationMenuLink>

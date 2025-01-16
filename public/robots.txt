@@ -1,0 +1,19 @@
+# Allow Google crawlers
+User-agent: Googlebot
+Allow: /
+
+# Allow Meta/Facebook crawlers
+User-agent: FacebookBot
+Allow: /
+
+# Allow OpenAI crawlers
+User-agent: GPTBot
+Allow: /
+
+# Allow Anthropic crawlers
+User-agent: Anthropic-AI
+Allow: /
+
+# Default rule for all other crawlers
+User-agent: *
+Allow: /

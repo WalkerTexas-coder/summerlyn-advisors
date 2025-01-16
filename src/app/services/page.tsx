@@ -3,6 +3,12 @@ import { Monitor, Shield, Phone, CreditCard, Workflow, Bot } from "lucide-react"
 
 const services = [
   {
+    title: "Digital Transformation",
+    href: "/services/digital-transformation",
+    description: "Enterprise digital transformation strategy and execution with Axacraft",
+    icon: Monitor,
+  },
+  {
     title: "Odoo Implementation",
     href: "/services/odoo-implementation",
     description: "Enterprise-grade ERP solutions tailored to your business needs",
