@@ -2,10 +2,9 @@ import { notFound } from "next/navigation"
 import { BlogPost } from "@/components/blog-post"
 import blogData from "@/data/blog-posts.json"
 
-interface BlogPostPageProps {
-  params: {
-    id: string
-  }
+type BlogPostPageProps = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export function generateStaticParams() {
