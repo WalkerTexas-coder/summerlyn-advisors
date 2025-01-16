@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/summerlyn-advisors',
+  images: {
+    unoptimized: true,
+  },
+  // Disable server-side features since we're exporting static
+  trailingSlash: true,
 };
 
 export default nextConfig;
