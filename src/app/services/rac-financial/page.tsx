@@ -1,6 +1,5 @@
-import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Shield, CreditCard, Clock, DollarSign, Headphones, Terminal } from "lucide-react"
+import { ArrowRight, Shield, DollarSign, Headphones, Terminal } from "lucide-react"
 
 export default function RacFinancialPage() {
   return (
@@ -94,7 +93,7 @@ export default function RacFinancialPage() {
             <div className="rounded-lg border bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold">State of The Art Security For Your Business</h3>
               <p className="mb-6 text-gray-600">
-                Creating a secure environment for your customers' data is an essential component of a 
+                Creating a secure environment for your customers&apos; data is an essential component of a 
                 reputable business. We have spent years building a solid system of processing, storing 
                 and transmitting information across various payment terminals.
               </p>

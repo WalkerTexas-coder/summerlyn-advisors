@@ -137,7 +137,7 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold">Success Stories</h2>
             <p className="mx-auto max-w-2xl text-gray-600">
-              See how we've helped organizations transform their operations with
+              See how we&apos;ve helped organizations transform their operations with
               enterprise technology solutions.
             </p>
           </div>

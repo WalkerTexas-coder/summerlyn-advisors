@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="mx-auto max-w-xl text-center">
         <h1 className="mb-4 text-4xl font-bold">Page Not Found</h1>
         <p className="mb-8 text-lg text-gray-600">
-          Sorry, we couldn't find the page you're looking for. Please check the URL
+          Sorry, we couldn&apos;t find the page you&apos;re looking for. Please check the URL
           or navigate back to our homepage.
         </p>
         <Link

@@ -40,7 +40,7 @@ export default function ServiceNotFound() {
       <div className="mx-auto max-w-2xl text-center">
         <h1 className="mb-4 text-4xl font-bold">Service Not Found</h1>
         <p className="mb-8 text-lg text-gray-600">
-          We couldn't find the service you're looking for. Please check out our
+          We couldn&apos;t find the service you&apos;re looking for. Please check out our
           available services below.
         </p>
         <div className="mb-8 grid gap-4 sm:grid-cols-2">
