@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export type PageProps<T = object> = {
   params: T
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams?: { [key: string]: string | string[] | undefined }
 }
 
 export type LayoutProps<T = object> = PageProps<T> & {
